@@ -42,6 +42,6 @@ function readCity(tag, city, pbf) {
         lastLat += pbf.readSVarint()
         city.loc.coordinates[1] = lastLat / 1e5
     } else if (tag === 12) {
-        city.alternativeNames = (pbf.readString()).split(',')
+        city.alternativeNames = pbf.readString()
     }
 }
