@@ -52,6 +52,7 @@ function writeCity(city, pbf) {
     const lon = Math.round(1e5 * city.lon)
     pbf.writeSVarintField(10, lon - lastLon)
     pbf.writeSVarintField(11, lat - lastLat)
+    pbf.writeStringField(12, city.alternativeNames)
    
    
     lastLat = lat
