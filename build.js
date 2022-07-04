@@ -3,7 +3,7 @@
 const fs = require('fs')
 const split = require('split2')
 const through = require('through2')
-const cities = require('cities-with-1000');
+const cities = require('./cities');
 const Pbf = require('pbf')
 
 var pbf = new Pbf()

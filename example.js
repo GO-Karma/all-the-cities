@@ -1,7 +1,7 @@
 const cities = require('.')
 
 console.log(cities.filter(city => {
-  return city.name.match('Albuquerque')
+  return city.name.match('Lǝnkǝran')
 }))
 
 // [{

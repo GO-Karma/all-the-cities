@@ -2,7 +2,7 @@ const Pbf = require('pbf')
 const fs = require('fs')
 const path = require('path')
 
-var pbf = new Pbf(fs.readFileSync(path.join(__dirname, 'cities.pbf')))
+var pbf = new Pbf(fs.readFileSync(path.join(__dirname, 'citydata.pbf')))
 var cities = []
 
 var lastLat = 0
